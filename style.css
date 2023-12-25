@@ -52,10 +52,10 @@
   flex-direction: column;
   padding: 5vh 15vh;
   margin-left: 10vh;
-  gap: 13vh;
+  gap: 10vh;
 }
 
-h1{
+h1 {
   border-bottom: 1px solid black;
   padding: 2vh 5vh;
 }
@@ -78,6 +78,11 @@ h1{
   gap: 10vh;
   font-family: "Open Sans", sans-serif;
   width: 100%;
+}
+
+.bio-konten > img {
+  width: 100vh;
+  height: 40vh;
 }
 
 .konten-deskripsi {
@@ -158,7 +163,7 @@ h1{
 .resume-konten {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20vh;
 }
 
@@ -183,7 +188,7 @@ h1{
   text-align: left;
 }
 
-.professional a{
+.professional a {
   color: #007bff;
 }
 
@@ -201,7 +206,7 @@ h1{
 
 /* project */
 
-#project{
+#project {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,13 +221,13 @@ h1{
   gap: 5vh;
 }
 
-.filter-buttons button{
+.filter-buttons button {
   padding: 1vh 3vh;
   cursor: pointer;
   color: black;
 }
 
-.filter-buttons a{
+.filter-buttons a {
   color: black;
 }
 
@@ -232,20 +237,20 @@ h1{
 
 .gallery-item {
   width: 80%;
-  height: 60vh;
+  height: 100vh;
   margin: 5% 18%;
 }
 
 .gallery-item img {
   width: 80%;
-  height: 60vh;
+  height: 100vh;
   opacity: 1;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
-.gallery-item-keterangan{
-  transition: .5s ease;
+.gallery-item-keterangan {
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -258,7 +263,7 @@ h1{
   gap: 2vh;
 }
 
-.gallery-item-keterangan a{
+.gallery-item-keterangan a {
   color: blue;
 }
 
@@ -266,7 +271,7 @@ h1{
   opacity: 0.3;
 }
 
-.mobile.active img{
+.mobile.active img {
   opacity: 0.3;
 }
 
@@ -274,14 +279,12 @@ h1{
   opacity: 1;
 }
 
-
 @media only screen and (max-width: 1200px) {
-
-  .navbar{
+  .navbar {
     font-size: small;
   }
 
-  .body{
+  .body {
     padding: 5vh 0vh;
     font-size: small;
   }
@@ -325,42 +328,55 @@ h1{
     width: auto;
   }
 
-  .filter-buttons{
+  .filter-buttons {
     gap: 2vh;
   }
 
   .gallery-item {
     height: 50vh;
   }
-  
+
   .gallery-item img {
     height: 50vh;
   }
 }
 
 @media only screen and (max-width: 900px) {
+  .bio-konten > img {
+    width: 40vh;
+    height: 40vh;
+  }
+
   .gallery-item {
     height: 40vh;
   }
-  
+
   .gallery-item img {
     height: 40vh;
   }
 }
 
 @media only screen and (max-width: 700px) {
+  .bio-konten > img {
+    width: 30vh;
+    height: 40vh;
+  }
   .gallery-item {
     height: 30vh;
   }
-  
+
   .gallery-item img {
     height: 30vh;
   }
 }
 
 @media only screen and (max-width: 580px) {
-  .navbar{
-    font-size:x-small;
+  .bio-konten > img {
+    width: 30vh;
+    height: 40vh;
+  }
+  .navbar {
+    font-size: x-small;
   }
   #bio {
     font-size: small;
@@ -368,12 +384,13 @@ h1{
   .gallery-item {
     height: 20vh;
   }
-  
+
   .gallery-item img {
     height: 20vh;
   }
 
-  .gallery-item-keterangan p, a{
-    font-size:smaller;
+  .gallery-item-keterangan p,
+  a {
+    font-size: smaller;
   }
 }
